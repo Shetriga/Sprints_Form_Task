@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Mahmoud Atef" />
+    <meta name="description" content="HTML Form Task" />
+    <title>Form Task</title>
+  </head>
+  <body bgcolor="#00726D">
+    <div style="border: 1px solid white">
+      <label
+        style="
+          position: absolute;
+          left: 20px;
+          top: 0px;
+          background-color: #34a29e;
+          padding: 0px 15px;
+        "
+        >Personal Data</label
+      >
+      <br />
+      <form method="post">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <label
+          style="
+            position: absolute;
+            background-color: #00bbba;
+            left: 40px;
+            top: 80px;
+            padding: 40px 0px;
+          "
+          >Mahmoud Atef</label
+        >
+        <table bgcolor="#34A29E" width="98%" align="center">
+          <tr>
+            <td width="150px">
+              <br /><br /><br /><br /><br />
+              First Name
+            </td>
+            <td colspan="">
+              <br /><br /><br /><br /><br />:
+              <input required name="fName" placeholder="ex.Mahmoud" type="text" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Last Name</td>
+            <td>: <input required name="lName" placeholder="ex.Atef" type="text" /></td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td><br /><br /><br /><br /><br />Your Phone</td>
+            <td><br /><br /><br /><br /><br />: <input type="tel" /></td>
+          </tr>
+
+          <tr>
+            <td style="width: 150px">Email</td>
+            <td>: <input required name="email" type="text" /></td>
+          </tr>
+
+          <tr>
+            <td style="width: 150px">Password</td>
+            <td>: <input required name="password" type="text" /></td>
+          </tr>
+
+          <tr>
+            <td style="width: 150px">Re-Password</td>
+            <td>: <input required name="rePassword" type="text" /></td>
+          </tr>
+        </table>
+
+        <br />
+        <br />
+        <br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <br />
+        <input type="checkbox" id="student" name="student" value="student" />
+        <label for="student">Student</label>
+        <br />
+        <input
+          type="checkbox"
+          id="graduated"
+          name="graduated"
+          value="graduated"
+        />
+        <label for="graduated">Grauated</label>
+        <br />
+        <br />
+        <label for="university">University : </label>
+        <select name="university" id="university">
+          <option value="AUC">AUC</option>
+          <option value="MSA">MSA</option>
+          <option value="MUST">MUST</option>
+        </select>
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+      <br />
+    </div>
+  </body>
+</html>
